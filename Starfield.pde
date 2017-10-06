@@ -1,7 +1,7 @@
 Particle[] bob;
 void setup()
 {
-  size(600,600);
+  size(600,500);
   bob = new Particle[2000]; 
   for( int i = 0; i < bob.length; i++)
   {
@@ -24,6 +24,7 @@ void mousePressed()
   fill(255);
   textSize(50);
   text("HAHAHAHAHAHAHAHA",20,250);
+  text("OFC IT WONT CRASH",20,350);
 }
 class NormalParticle implements Particle
 {
@@ -31,7 +32,7 @@ class NormalParticle implements Particle
   NormalParticle()
   {
     myX = 300;
-    myY = 300;
+    myY = 250;
     mySpeed = Math.random()*13;
     myAngle = (double)(Math.random()*6.28)+1;    
   }
@@ -42,25 +43,25 @@ class NormalParticle implements Particle
     if(myX > 800)
     {  
       myX = 300;
-      myY = 300;
+      myY = 250;
       myAngle = (double)(Math.random()*6.28)+1;    
     }
     else if(myX < -200)
     {
       myX = 300;
-      myY = 300;
+      myY = 250;
       myAngle = (double)(Math.random()*6.28)+1;    
     }
     else if(myY < -200)
     {
       myX = 300;
-      myY = 300;
+      myY = 250;
       myAngle = (double)(Math.random()*6.28)+1;    
     }
     else if(myY > 800)
     { 
       myY = 300;
-      myX = 300;
+      myX = 250;
       myAngle = (double)(Math.random()*6.28)+1;    
     }
   }
